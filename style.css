@@ -1,0 +1,25 @@
+ #carousel img {
+	width: 400px;
+	height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+} 
+#carousel ul{
+	list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+.carousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+body {
+  margin: 0;
+}

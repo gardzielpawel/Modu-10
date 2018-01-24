@@ -1,16 +1,10 @@
-var span = $("span");
-span.each(function(index, element) {
+$(function() {
+  var carouselList = $("#carousel ul");
+  setInterval(carouselList, 3000 );
+  carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
 });
 
-$("span:even").css('color', 'red');
-
-var paragraphs = $("p");
-paragraphs.each(function(index, element) {
-
-	var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
-	$(element).append(button);
-});
-
-$("button").click(function() {
-	alert($(this).attr("data-tmp"));
-});
+var firstItem = carouselList.find("li:first");
+var lastItem = carouselList.find("li:last");
+lastItem.after(firstItem);
+carouselList.css({marginLeft:0});
